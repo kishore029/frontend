@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  margin: 0;
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.sign-in {
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/hero-image.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #e50914;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.row {
+  padding: 20px;
+}
+
+.row h2 {
+  margin-left: 20px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.poster {
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.poster:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+}
+</style>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo">
+    <nav>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>New & Popular</li>
+        <li>My List</li>
+      </ul>
+    </nav>
+    <button class="sign-in">Sign In</button>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Watch anywhere.</h2>
+      <button> <a href="http://www.Netflix.com" target="_blank" class="cta">Watch now</a>
+</button>
+    </div>
+  </section>
+
+  <!-- Content Rows -->
+  <section class="row">
+    <h1>Popular on Netflix</h1>
+    <div class="row-posters">
+       <img src="ben.jfif" class="poster" alt="ben 10">
+      <img src="sex eductio.jfif" class="poster" alt="Sex eduction">
+      <img src="Shahrukh Khan _ Jawan (2023) - Poster_Affiche….jfif"  class="poster" alt="Jawan">
+      <img src="sq.jfif" class="poster" alt="squid game">
+      <img src="bab.jfif"  class="poster" alt="baeaking bad">
+      <img src="A endgame.jfif" class="poster" alt="Avengers endgame">
+</section>
+
+  <section class="row">
+  <h2>Romantic Movies</h2>
+  <div class="row-posters">
+    <img src="dilse.jfif" class="poster" alt="Dil se">
+    <img src="The Hangover collection Plex movie poster_.jfif" class="poster" alt="over">
+     <img src="https://image.tmdb.org/t/p/w500/2CAL2433ZeIihfX1Hb2139CX0pW.jpg" class="poster" alt="DDLJ">
+    <img src="laapaataaladies.jfif" class="poster" alt="Dil se">
+    <img src="(2009) 17 Again.jfif" class="poster" alt="To All the Boys">
+    <img src="tit.jfif" class="poster" alt="Titanic">
+    </div>
+  </section>
+
+  <section class="row">
+  <h3>Sci-Fi Thrillers</h3>
+  <div class="row-posters">
+     <img src="A endgame.jfif" class="poster" alt="Avengers endgame">
+    <img src="Ra One.jfif" class="poster" alt="raone">
+    <img src="out.jfif" class="poster" alt="out">
+    <img src="elite.jfif" class="poster" alt="elite">
+    <img src="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg" class="poster" alt="Inception">
+    <img src="https://image.tmdb.org/t/p/w500/xJHokMbljvjADYdit5fK5VQsXEG.jpg" class="poster" alt="Blade Runner 2049">
+  </div>
+</section>
+
+<section class="row">
+  <h4>Horror Movies</h4>
+  <div class="row-posters">
+    <img src="ready or not.jfif" class="poster" alt="ready">
+   <img src="Watch Movie It Full HD….jfif" class="poster" alt="it">
+   <img src="It_ Capítulo 2 - 2019.jfif" class="poster" alt="it 2">
+   <img src="the con.jfif" class="poster" alt="Conjuring">
+   <img src="om shati om.jfif" class="poster" alt="om shati om">
+   <img src="s line.jfif" class="poster" alt="s line">
+  </div>
+</section>
+
+  
+  <footer>
+    <p>© Netflix Clone • Created by Kishore</p>
+  </footer>
+</body>
+</html>
